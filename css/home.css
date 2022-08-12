@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+.banner {
+  background-image: url(../images/HomePage/mainBannerPhoto.png);
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.banner img {
+  height: 300px;
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner img {
+    display: flex;
+    height: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+}
+
+.bg2 {
+  background-color: #efefef;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: lightgray;
+}
+
+.copyrightArea {
+  background-color: #454040;
+  font-family: "Times New Roman", Times, serif;
+  color: #b3b3b3;
+}
+
+.customerTestimonials p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+.findMore {
+  height: 50px;
+  width: 200px;
+  border-radius: 25px;
+  background-color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.findMore a {
+  color: white;
+  text-decoration: none;
+}
+
+.findMore a:hover {
+  font-size: 1.3rem;
+  color: white;
+  transition: 0.3s;
+}
+
+footer {
+  background-color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: gray;
+}
+
+.logo img {
+  height: 75px;
+}
+
+nav {
+  height: 100px;
+}
+
+nav ul li {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid gray;
+
+}
+
+.offers {
+  display: grid;
+  grid-template: row;
+  grid-template-areas: "wedPhotoThumb corpPhotoThumb socPhotoThumb";
+  gap: 20px;
+}
+
+@media screen and (max-width: 890px) {
+  .offers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+.offers img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.small-banner {
+  background-color: #bd574e;
+  color: white;
+}
+
+.testimonials {
+  height: 500px;
+  text-align: center;
+  padding: 125px 0;
+}
+
+.topBtn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  background-color: #b3b3b3;
+
+}
