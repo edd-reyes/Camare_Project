@@ -25,7 +25,6 @@
     height: 250px;
     margin-right: auto;
     margin-left: auto;
-    
   }
 }
 
@@ -51,23 +50,18 @@
 }
 
 .findMore {
-  height: 50px;
-  width: 200px;
-  border-radius: 25px;
+  text-decoration: none;
+  border-radius: 10px;
   background-color: black;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-}
-
-.findMore a {
   color: white;
-  text-decoration: none;
-}
-
-.findMore a:hover {
+  padding: 20px;
   font-size: 1.3rem;
+}
+
+.findMore:hover {
   color: white;
-  transition: 0.3s;
 }
 
 footer {
@@ -76,7 +70,16 @@ footer {
 
 footer a {
   text-decoration: none;
+  color: #b3b3b3;
+}
+
+footer a:hover {
+  text-decoration: none;
   color: black;
+}
+
+.footerArea {
+  border-top: 0.5px solid #b3b3b3;
 }
 
 h1,
@@ -85,7 +88,7 @@ h3,
 h4,
 h5 {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -114,7 +117,6 @@ nav ul li {
 
 nav ul li:hover {
   border-bottom: 2px solid gray;
-
 }
 
 .offers {
@@ -140,15 +142,12 @@ nav ul li:hover {
   margin-bottom: 20px;
 }
 
-.small-banner {
-  background-color: #bd574e;
-  color: white;
-}
-
 .testimonials {
   height: 500px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  padding: 125px 0;
+  justify-content: center;
 }
 
 .topBtn {
@@ -159,5 +158,4 @@ nav ul li:hover {
   height: 30px;
   opacity: 0.5;
   background-color: #b3b3b3;
-
 }
