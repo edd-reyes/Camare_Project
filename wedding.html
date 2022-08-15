@@ -88,22 +88,99 @@
 
     <main>
         <!-- <Wedding Page Intro> -->
-        <div class="container-lg d-flex wedIntro">
+        <div class="container-lg d-flex wedIntro py-5">
             <div class="row">
-                <div class="col-6 wedIntroP d-flex align-items-center">
-                    <p>
+                <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center">
+                    <div class="wedIntroP">
+                      <p>
                         Our team is here to make the day you've always dreamed of, the day you'll never forget. <br><br>
         
                         From the very beginning, we will create a custom proposal based on your wants and needs. Once booked, your Infinity event team will collaborate with you to build the foundation of your wedding, creating an inspiration board and floor plan based on your unique vision. From unique lighting to seating charts, with us customization is guaranteed. <br><br>
         
                         We care about the experience of planning your wedding from start to finish. So relax and have fun. Your Infinity event team will guide you every step of the way, ensuring your big day is effortless and unforgettable.
-                    </p>
-                </div>
-                    <div class="col-6 wedIntroImg d-flex justify-content-center">
-                        <img src="./images/Services/wedding/tumblr_mc6uziLLa21rwu9s0o1_640.png" alt="Cardo Wedding">
+                      </p>
                     </div>
+                </div>
+                <div class="col-lg-6 col-md-12 wedIntroImg d-flex justify-content-center align-items-center">
+                    <img src="./images/Services/wedding/tumblr_mc6uziLLa21rwu9s0o1_640.png" alt="Cardo Wedding">
+                </div>
             </div>
         </div>
+        <!-- <Wedding Page Intro/> -->
+        <!-- <Wedding Services> -->
+          <div class="container-fluid bg2 py-5">
+            <div class="container-lg d-flex">
+              <div class="row wedServices">
+                <div class="col-lg-6 col-md-12 wedServicesImg d-flex justify-content-center align-items-center">
+                    <img src="./images/Services/wedding/Lifelong_Photography-717+(2).jpg" alt="Brides Maids">
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex align-items-center justify-content-center wedServicesList">
+                    <div>
+                      <h2 class="font" >Our Wedding Services</h2>
+                      <ul class="fonts">
+                        <li>Ceremony & Reception Coordination</li>
+                        <li>Rehearsal Dinner Coordination</li>
+                        <li>Rentals & Vendor Coordination</li>
+                        <li>Wedding Day Timeline</li>
+                        <li>Floor Plan Design</li>
+                        <li>Wedding Concept & Design</li>
+                        <li>Budget Management</li>
+                        <li>Security & Staffing</li>
+                        <li>Tenting</li>
+                        <li>Transportation & Parking</li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- <Wedding Services /> -->
+        <!-- <Wedding Events History> -->
+        <div class="container-lg d-flex flex-column justify-content-center">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="font py-5" data-aos="fade-down">WEDDINGS</h1>
+            </div>
+          </div>
+
+          <div class="row wedHistory">
+            <div class="col-lg-4 col-md-6">
+              <h5>Karlo + Melanie's modern beach wedding</h5>
+              <a href="#">
+                <img src="./images/Services/wedding/wedhistoryImg1.jpg" alt="Beach Wedding" onmouseover="increase()"
+                onmouseout="zoomOut()" id="wed1" width="395">
+              </a>
+              <p>A fun modern themed beach wedding at Subic Bay for Mr. & Mrs. Crawford.</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <h5>Micah + Jasper's colorful vintage wedding</h5>
+              <a href="#">
+                <img src="./images/Services/wedding/wedhistoryImg2.jpg" alt="Vintage Wedding" onmouseover="increase()"
+                onmouseout="zoomOut()" id="wed2" width="395">
+              </a>
+              <p>A classic oldies themed wedding at Resort's World Manila for Mr. & Mrs. Blake.</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <h5>Charles + Cha's romantic rustic wedding</h5>
+              <a href="#">
+                <img src="./images/Services/wedding/wedhistoryImg3.jpg" alt="Rustic Wedding" onmouseover="increase()"
+                onmouseout="zoomOut()" id="wed3" width="395">
+              </a>
+              <p>A peaceful wedding ceremony and reception at San Mateo, Rizal's Park for Mr. & Mrs. Dalisay</p>
+            </div>
+          </div>
+          <div class="seeMore d-flex justify-content-center py-5">
+            <input type="button" value="See More...">
+          </div>
+          <div class="contactP d-flex justify-content-center">
+            <p>
+              <em>Planning an event? Let's talk about it.</em>
+              <a href="./contact.html" class="font">CONTACT US</a>
+            </p>
+          </div>
+        </div>
+        <!-- <Wedding Events History /> -->
+
     </main>
 
       
@@ -286,6 +363,6 @@
   <script>
     AOS.init();
   </script>
-    
+  <script src="./js/wedding.js"></script>
 </body>
 </html>
