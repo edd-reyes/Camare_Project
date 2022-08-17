@@ -1,8 +1,12 @@
 * {
     box-sizing: border-box;
   }
+  
+.bg2 {
+    background-color: #efefef;
+  }
 
-  .banner {
+.banner {
     background-image: url(../images/Services/bglogo.png);
     height: 300px;
     background-attachment: fixed; 
@@ -12,125 +16,147 @@
     justify-content: center;
   }
 
-  .banner h2 {
+.banner h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 70px;
     color: whitesmoke;
   }
 
-  .introP {
+.font {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+.fonts {
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.introP {
     width: 80%;
   }
 
-  .introImg img {
-    height: 80%;
+.introImg img {
+    height: 100%;
     width: 80%;
   }
 
-  .wedHistory p {
-    padding-top: 10px;
+.corpServices img {
+    height: 100%;
+    width: 90%;
+}
+
+.eventServices {
+    width: 70%;
+}
+
+.typeServices {
+    width: 80%;
+}
+
+.clients img {
+    width: 60%;
+}
+
+.corpBlog p {
+    padding: 10px 0px 10px 0px;
     text-align: center;
-  }
+}
 
-  .seeMore input[type="button"] {
+.corpBlog img {
+    height: 60%;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.seeMore input[type="button"] {
     background-color: black;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     border-radius: 5px;
     border: none;
     padding: 15px;
-  }
+}
 
-  .seeMore input[type="button"]:hover {
+.seeMore input[type="button"]:hover {
     background-color: gray;
     border: none;
-  }
+}
 
-  .contactP a {
-    text-decoration: none;
-    color: black;
-  }
+.testimonials {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
 
-  .contactP a:hover {
-    color: gray;
-    text-decoration: underline;
-  }
-
-  .bg2 {
-    background-color: #efefef;
-  }
-
-  .wedServices img {
-    height: 80%;
-    width: 80%;
-  }
-
-  .font {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-  }
-
-  .fonts {
-    color: gray;
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  .wedHistory img {
-    height: 60%;
-    /* width: 95%; */
-    display: block;
+  .customerTestimonials p {
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .copyrightArea {
+    width: 800px;
+}
+
+.contactP a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactP a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.copyrightArea {
     background-color: #454040;
     font-family: "Times New Roman", Times, serif;
     color: #b3b3b3;
   }
   
-  footer {
+footer {
     background-color: white;
   }
   
-  footer a {
+footer a {
     text-decoration: none;
     color: #b3b3b3;
   }
   
-  footer a:hover {
+footer a:hover {
     text-decoration: none;
     color: black;
   }
   
-  .footerArea {
+.footerArea {
     border-top: 0.5px solid #b3b3b3;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     text-align: center;
     padding: 10px;
     font-family: "Montserrat", sans-serif;
   }
   
-  p {
+p {
     font-family: "Times New Roman", Times, serif;
     color: gray;
   }
   
-  .logo img {
+.logo img {
     height: 75px;
   }
   
-  nav {
+nav {
     height: 100px;
   }
   
-  nav ul li {
+nav ul li {
     font-size: 20px;
     font-family: "Times New Roman", Times, serif;
     color: black;
@@ -140,11 +166,11 @@
     margin-right: 50px;
   }
   
-  nav ul li:hover {
+nav ul li:hover {
     border-bottom: 2px solid gray;
   }
   
-  .topBtn {
+.topBtn {
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -153,4 +179,3 @@
     opacity: 0.5;
     background-color: #b3b3b3;
   }
-  
