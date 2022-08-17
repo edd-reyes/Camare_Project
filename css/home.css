@@ -61,6 +61,8 @@
 }
 
 .findMore:hover {
+  background-color: gray;
+  border: none;
   color: white;
 }
 
@@ -158,4 +160,21 @@ nav ul li:hover {
   height: 30px;
   opacity: 0.5;
   background-color: #b3b3b3;
+}
+
+.homeBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  border: 2px solid #101010;
+}
+
+.wedPhotoThumb img:hover, .corpPhotoThumb img:hover, .socPhotoThumb img:hover{
+  transform: scale(1.1);
+  transition: 0.2s ease;
 }
