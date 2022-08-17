@@ -39,7 +39,7 @@
 
 .copyrightArea {
   background-color: #454040;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Quicksand", sans-serif;
   color: #b3b3b3;
 }
 
@@ -53,10 +53,10 @@
   text-decoration: none;
   border-radius: 10px;
   background-color: black;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   color: white;
-  padding: 20px;
+  padding: 20px 50px;
   font-size: 1.3rem;
 }
 
@@ -71,6 +71,9 @@ footer {
 }
 
 footer a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
   text-decoration: none;
   color: #b3b3b3;
 }
@@ -91,12 +94,17 @@ h4,
 h5 {
   text-align: center;
   padding: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Didot LP Display";
+  color: #2d2c2d;
+  font-size: 2.5rem;
+  letter-spacing: 2.5px;
 }
 
 p {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Quicksand", sans-serif;
   color: gray;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .logo img {
@@ -108,13 +116,16 @@ nav {
 }
 
 nav ul li {
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Kontora", Sans-serif;
   color: black;
   display: flex;
   align-items: center;
   margin-left: 50px;
   margin-right: 50px;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 nav ul li:hover {
@@ -145,7 +156,7 @@ nav ul li:hover {
 }
 
 .testimonials {
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -174,7 +185,9 @@ nav ul li:hover {
   border: 2px solid #101010;
 }
 
-.wedPhotoThumb img:hover, .corpPhotoThumb img:hover, .socPhotoThumb img:hover{
+.wedPhotoThumb img:hover,
+.corpPhotoThumb img:hover,
+.socPhotoThumb img:hover {
   transform: scale(1.1);
   transition: 0.2s ease;
 }
