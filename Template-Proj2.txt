@@ -14,3 +14,8 @@ Other font:
 
 Color Scheme
 PER DIV ALTERNATE WHITE AND #efefef
+
+New fonts:
+Didot - headers
+Quicksand - p & others
+Kontorra - navbar

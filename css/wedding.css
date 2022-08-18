@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
 
-  .banner {
+.banner {
     background-image: url(../images/Services/bglogo.png);
     height: 300px;
     background-attachment: fixed; 
@@ -12,32 +12,27 @@
     justify-content: center;
   }
 
-  .banner h2 {
-    font-family: 'Times New Roman', Times, serif;
+.banner h2 {
+    font-family: "Didot LP Display";
     font-size: 70px;
     color: whitesmoke;
   }
 
-  .introP {
+.introP {
     width: 80%;
   }
 
-  .introImg img {
+.introImg img {
     height: 80%;
     width: 80%;
   }
-
-.wedIntroImg img {
-  height: 80%;
-  width: 80%;
-}
 
 .wedHistory p {
   padding-top: 10px;
   text-align: center;
 }
 
-.wedServicesList ul li {
+.servicesList ul li {
   font-family: "Quicksand", sans-serif;
   color: gray;
   font-size: 14px;
@@ -166,4 +161,16 @@ nav ul li:hover {
   height: 30px;
   opacity: 0.5;
   background-color: #b3b3b3;
+}
+
+.homeBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  border: 2px solid #101010;
 }
