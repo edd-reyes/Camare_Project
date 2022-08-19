@@ -36,6 +36,13 @@
     width: 90%;
 }
 
+.corpServices ul li {
+  font-family: "Quicksand", sans-serif;
+  color: gray;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
 .eventServices {
     width: 70%;
 }
@@ -45,7 +52,7 @@
 }
 
 .clients img {
-    width: 60%;
+    width: 70%;
 }
 
 .corpBlog p {
@@ -191,4 +198,13 @@ nav ul li:hover {
   background-color: #b3b3b3;
   border-radius: 50%;
   border: 2px solid #101010;
+}
+
+@media screen and (max-width: 768px) {
+  .navIndex {
+    position: absolute;
+    left: 40px;
+    top: 70px;
+    z-index: 1;
+  }
 }
