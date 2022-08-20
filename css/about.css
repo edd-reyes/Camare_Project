@@ -21,6 +21,8 @@ p {
   font-size: 14px;
   letter-spacing: 1px;
   padding-top: 10px;
+  text-align: center;
+
 }
 
 
@@ -88,12 +90,6 @@ main {
 .mission p {
   align-self: center;
 }
-
-#mission-strong {
-  font-weight: bold;
-  color: black;
-}
-
 
 .team {
   display: block;
@@ -182,12 +178,18 @@ main {
 
 .services {
   background-color: #efefef;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .services h2 {
   padding-top: 20px;
+  padding-bottom: 0;
 }
 
+.services p {
+   margin-top: 0;
+}
 .events {
   display: flex;
   margin-left: auto;
