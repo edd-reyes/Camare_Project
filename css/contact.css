@@ -111,3 +111,8 @@ nav ul li:hover {
   border-radius: 50%;
   border: 2px solid #101010;
 }
+
+.error {
+  color: red;
+  font-style: italic;
+}
