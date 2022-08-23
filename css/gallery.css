@@ -75,12 +75,12 @@ html {
   align-content: center;
   align-items: center;
   justify-content: center;
-  max-width: 80%;
+  max-width: 1500px;
   height: 100%;
   margin: 0 auto;
   padding: 20px;
   list-style: none;
-  gap: 40px;
+  gap: 25px;
 }
 
 .image-grid__item {
@@ -88,14 +88,12 @@ html {
   flex-direction: column;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 360px;
+  flex-basis: 350px;
   align-items: stretch;
   justify-content: center;
   position: relative;
-  height: 350px;
-  margin-right: 14px;
-  margin-bottom: 14px;
-  transition: transform 0.14s ease-in, text-shadow 0.1s ease-in;
+  height: 200px;
+   transition: transform 0.14s ease-in, text-shadow 0.1s ease-in;
 }
 .image-grid__item:before {
   content: "";

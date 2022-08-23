@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
   <!--     Custom CSS -->
-  <link rel="stylesheet" href="./css/gallery.css" />
+  <link rel="stylesheet" href="./css/modal.css" />
   <link rel="icon" href="./images/ICON_ONLY.svg" />
   <!-- BOOTSTRAP CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,8 +17,16 @@
 
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+ 
+  <title>Happy Couples</title>
 
-  <title>Image Gallery</title>
+  <script src="https://kit.fontawesome.com/5e3f688cc3.js" crossorigin="anonymous"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 </head>
 
 <body>
@@ -63,87 +71,193 @@
   <!-- <Gallery Banner> -->
   <header>
     <div class="container-fluid banner">
-      <h2 data-aos="fade-down" data-aos-duration="1500">Image Gallery</h2>
+      <h2 data-aos="fade-down" data-aos-duration="1500">Happy Couples</h2>
     </div>
   </header>
   <!-- <Gallery Banner /> -->
 
   <main>
-    <!--Zoom effect-->
+    <!--Modal Image Gallery-->
     <ul class="image-grid">
-      <li class="image-grid__item">
-        <a href="./tablesettings.html" class="grid-item">
-          <div class="grid-item__image" style="background-image: url(./images/gallery/Sterling-Checks-TBB-5-614x346.jpg)"></div>
-          <div class="grid-item__hover"></div>
-          <div class="grid-item__name">TABLE SETTINGS</div>
-        </a>
-      </li>
-      
-      <li class="image-grid__item">
-        <a href="./details.html" class="grid-item">
-          <div class="grid-item__image" style="background-image: url(./images/gallery/Sarah-Frances-Jackson-Bell-Tower-25-614x346.jpg)"></div>
-          <div class="grid-item__hover"></div>
-          <div class="grid-item__name">DETAILS</div>
-        </a>
-      </li>	
-      
-      <li class="image-grid__item">
-        <a href="./ceremonies.html" class="grid-item">
-          <div class="grid-item__image" style="background-image: url(./images/gallery/Megan-Bravein_Bridge-Building-Wedding_40-614x346.jpg)"></div>
-          <div class="grid-item__hover"></div>
-          <div class="grid-item__name">CEREMONIES</div>
-        </a>
-      </li>	
-      
-      <li class="image-grid__item">
-        <a href="./receptions.html" class="grid-item">
-          <div class="grid-item__image" style="background-image: url(./images/gallery/Erin-Seth_Bridge-Building-Wedding_31-614x346.jpg)"></div>
-          <div class="grid-item__hover"></div>
-          <div class="grid-item__name">RECEPTIONS</div>
-        </a>
-      </li>	
-      
-      <li class="image-grid__item">
-        <a href="./happycouples.html" class="grid-item">
-          <div class="grid-item__image" style="background-image: url(./images/gallery/Wilkins-327-614x346.jpg)"></div>
-          <div class="grid-item__hover"></div>
-          <div class="grid-item__name">HAPPY COUPLES</div>
-        </a>
-      </li>	
-      
-      <li class="image-grid__item">
-        <a href="./corporate.html" class="grid-item">
-          <div class="grid-item__image" style="background-image: url(./images/gallery/Arconic-Awards_Bridge-Building_12-614x346.jpg)"></div>
-          <div class="grid-item__hover"></div>
-          <div class="grid-item__name">CORPORATE</div>
-        </a>
-      </li>		
+        <li class="image-grid__item">
+          <a href="#" class="grid-item">
+            <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Sterling-Checks-TBB-5-614x346.jpg)"></div>
+            <div class="grid-item__hover"></div>
+            <div class="grid-item__name" onclick="openLightbox();toSlide(1)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+          </a>
+        </li>
+        
+        <li class="image-grid__item">
+          <a href="#" class="grid-item">
+            <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Meghan-Carter_Quarter-Rehearsal-Dinner_12.jpg)"></div>
+            <div class="grid-item__hover"></div>
+            <div class="grid-item__name" onclick="openLightbox();toSlide(2)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+          </a>
+        </li>	
+        
+        <li class="image-grid__item">
+          <a href="#" class="grid-item">
+            <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Table-Settings_2-614x346.jpg)"></div>
+            <div class="grid-item__hover"></div>
+            <div class="grid-item__name" onclick="openLightbox();toSlide(3)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+          </a>
+        </li>	
+        
+        <li class="image-grid__item">
+          <a href="#" class="grid-item">
+            <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Open-House_The-Quarter_18-590x332.jpg)"></div>
+            <div class="grid-item__hover"></div>
+            <div class="grid-item__name" onclick="openLightbox();toSlide(4)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+          </a>
+        </li>	
+        
+        <li class="image-grid__item">
+          <a href="#" class="grid-item">
+            <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Tricia-Mark-The-Bridge-Building-Wedding-34-614x346.jpg)"></div>
+            <div class="grid-item__hover"></div>
+            <div class="grid-item__name" onclick="openLightbox();toSlide(5)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+          </a>
+        </li>	
+        
+        <li class="image-grid__item">
+          <a href="#" class="grid-item">
+            <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Cindy-Steven_Bridge-Building-Wedding_28-614x346.jpg)"></div>
+            <div class="grid-item__hover"></div>
+            <div class="grid-item__name" onclick="openLightbox();toSlide(6)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+          </a>
+        </li>		
+  
+        <li class="image-grid__item">
+          <a href="#" class="grid-item">
+            <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Roku_Bridge-Building-Event_15-614x346.jpg)"></div>
+            <div class="grid-item__hover"></div>
+            <div class="grid-item__name" onclick="openLightbox();toSlide(7)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+          </a>
+        </li>		
+  
+        <li class="image-grid__item">
+          <a href="#" class="grid-item">
+            <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Arconic-Awards_Bridge-Building_12-614x346.jpg)"></div>
+            <div class="grid-item__hover"></div>
+            <div class="grid-item__name" onclick="openLightbox();toSlide(8)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+          </a>
+        </li>		
+  
+        <li class="image-grid__item">
+          <a href="#" class="grid-item">
+            <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/WJ-Weiser_Bell-Tower_Corporate-Event_14-614x346.jpg)"></div>
+            <div class="grid-item__hover"></div>
+            <div class="grid-item__name" onclick="openLightbox();toSlide(9)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+          </a>
+        </li>	
+        
+        <li class="image-grid__item">
+            <a href="#" class="grid-item">
+              <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/INCITS-Dinner_The-Quarter_23-614x346.jpg)"></div>
+              <div class="grid-item__hover"></div>
+              <div class="grid-item__name" onclick="openLightbox();toSlide(10)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </a>
+        </li>	
 
-      <li class="image-grid__item">
-        <a href="./bar.html" class="grid-item">
-          <div class="grid-item__image" style="background-image: url(./images/gallery/Sterling-Checks-TBB-25-614x346.jpg)"></div>
-          <div class="grid-item__hover"></div>
-          <div class="grid-item__name">BAR</div>
-        </a>
-      </li>		
+        <li class="image-grid__item">
+            <a href="#" class="grid-item">
+              <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Natalie-Roydell-Bell-Tower-Wedding-15-614x346.jpg)"></div>
+              <div class="grid-item__hover"></div>
+              <div class="grid-item__name" onclick="openLightbox();toSlide(11)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </a>
+        </li>	
 
-      <li class="image-grid__item">
-        <a href="./eventsbridge.html" class="grid-item">
-          <div class="grid-item__image" style="background-image: url(./images/gallery/Erin-Seth_Bridge-Building-Wedding_4-614x346.jpg)"></div>
-          <div class="grid-item__hover"></div>
-          <div class="grid-item__name">EVENTS AT THE BRIDGE BUILDING</div>
-        </a>
-      </li>		
+        <li class="image-grid__item">
+            <a href="#" class="grid-item">
+              <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Kasey-George-Bell-Tower-Wedding-35-614x346.jpg)"></div>
+              <div class="grid-item__hover"></div>
+              <div class="grid-item__name" onclick="openLightbox();toSlide(12)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </a>
+        </li>	
 
-      <li class="image-grid__item">
-        <a href="./eventsbell.html" class="grid-item">
-          <div class="grid-item__image" style="background-image: url(./images/gallery/Rachel-Kevin_Bell-Tower-Wedding_14-614x346.jpg)"></div>
-          <div class="grid-item__hover"></div>
-          <div class="grid-item__name">EVENTS AT THE BELL TOWER</div>
-        </a>
-      </li>	
+        <li class="image-grid__item">
+            <a href="#" class="grid-item">
+              <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Rachel-Jon-The-Bell-Tower-Wedding-10-614x346.jpg)"></div>
+              <div class="grid-item__hover"></div>
+              <div class="grid-item__name" onclick="openLightbox();toSlide(13)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </a>
+        </li>	
 
-    </ul>
+        <li class="image-grid__item">
+            <a href="#" class="grid-item">
+              <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Heath-Pascal-Bridge-Building-Wedidng-18-614x346.jpg)"></div>
+              <div class="grid-item__hover"></div>
+              <div class="grid-item__name" onclick="openLightbox();toSlide(14)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </a>
+        </li>	
+
+        <li class="image-grid__item">
+            <a href="#" class="grid-item">
+              <div class="grid-item__image" style="background-image: url(./images/gallery/table-settings/Megan-Bravein_Bridge-Building-Wedding_46-614x346.jpg)"></div>
+              <div class="grid-item__hover"></div>
+              <div class="grid-item__name" onclick="openLightbox();toSlide(15)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </a>
+        </li>	
+
+      </ul>
+
+    <div id="Lightbox" class="modal" >
+        <div class="animate__animated animate__zoomIn" >
+        <span class="close pointer" onclick="closeLightbox()" >&times;</span>
+        <div class="modal-content">
+            <div class="slide ">
+                <img src="./images/gallery/Sterling-Checks-TBB-5-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Meghan-Carter_Quarter-Rehearsal-Dinner_12.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Table-Settings_2-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Open-House_The-Quarter_18-590x332.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Tricia-Mark-The-Bridge-Building-Wedding-34-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Cindy-Steven_Bridge-Building-Wedding_28-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Roku_Bridge-Building-Event_15-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Arconic-Awards_Bridge-Building_12-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/WJ-Weiser_Bell-Tower_Corporate-Event_14-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/INCITS-Dinner_The-Quarter_23-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Natalie-Roydell-Bell-Tower-Wedding-15-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Kasey-George-Bell-Tower-Wedding-35-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Rachel-Jon-The-Bell-Tower-Wedding-10-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Heath-Pascal-Bridge-Building-Wedidng-18-614x346.jpg" class="image-slide" />
+            </div>
+            <div class="slide">
+                <img src="./images/gallery/table-settings/Megan-Bravein_Bridge-Building-Wedding_46-614x346.jpg" class="image-slide" />
+            </div>
+            <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+    </div>
+        
+    
+
   </main>
 
 
@@ -260,6 +374,9 @@
   <script>
     AOS.init();
   </script>
+  <script src="./js/modal.js"></script>
+
+ 
 </body>
 
 </html>
