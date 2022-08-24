@@ -1,5 +1,5 @@
 const messageForm = document.querySelector("#messageForm");
-
+const submitBtn = document.querySelector(".submitBtn");
 const firstName = document.querySelector("#firstName");
 const firstNameError = document.querySelector("#firstNameError");
 const lastName = document.querySelector("#lastName");
@@ -42,7 +42,8 @@ const validateEmail = () => {
   if (!emailValue) {
     emailError.innerText = "*Email must be filled out";
   } else {
-    const regEx = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+    const regEx =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if (!regEx.test(emailValue)) {
       emailError.innerText = "*Please enter a valid email";
@@ -91,7 +92,7 @@ const validateGuest = () => {
   const guestValue = guest.value;
   guestError.innerText = "";
   if (guestValue == "Please select") {
-    guestError.innerText = "*Please select type of event";
+    guestError.innerText = "*Please select an estimation of guest number";
   }
 };
 
@@ -101,7 +102,10 @@ const validateDate = () => {
   dateError.innerText = "";
 
   if (new Date(dateValue).getTime() <= ToDate.getTime()) {
-    dateError.innerText = "Please select a valid date";
+    dateError.innerText = "*Please select a valid date";
+  }
+  if (date.value===""){
+    dateError.innerText = "*Please select a date";
   }
 };
 
@@ -136,6 +140,33 @@ messageForm.addEventListener("input", (e) => {
   }
 });
 
+submitBtn.addEventListener("click", () => {
+  if (firstName.value === "") {
+    validateFirstname();
+  }
+  if (lastName.value === "") {
+    validateLastname();
+  }
+  if (email.value === "") {
+    validateEmail();
+  }
+  if (phoneNum.value === "") {
+    validatePhoneNumber();
+  }
+  if (refer.value === "Please select") {
+    validateRefer();
+  }
+  if (events.value === "Please select") {
+    validateEvent();
+  }
+  if (guest.value === "Please select") {
+    validateGuest();
+  }
+  if (date.value == "") {
+    validateDate();
+  }
+});
+
 messageForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-  });
+  event.preventDefault();
+});
