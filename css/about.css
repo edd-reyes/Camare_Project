@@ -59,7 +59,7 @@ main {
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding-top: 10px;
+ 
   padding-bottom: 10px;
 }
 
@@ -250,3 +250,77 @@ footer a:hover {
   opacity: 0.5;
   background-color: #b3b3b3;
 }
+
+
+@media screen and (max-width: 768px) {
+  .about-images img {
+    width: 180px;
+    height: auto;
+   
+  }
+  .mission {
+    width: 100%;
+    gap: 15px;
+    padding: 15px;
+  }
+  .team-profile {
+    gap: 10px;
+  }
+  .team-message {
+    width: 100%;
+  }
+  .events {
+    gap: 10px;
+    padding: 15px;
+  }
+  .events div {
+    width: 250px;
+  }
+  .events div h3 {
+    font-size: 15px;
+  }
+  .events div img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about-images {
+    display: block;
+    margin-left: 10px;
+  }
+  .about-images img {
+    text-align: center;
+    width: 300px;
+  }
+  .display-none {
+    display: none;
+  }
+  .mission {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .team-profile {
+    display: block;
+  }
+  .team-message {
+    width: 100%;
+  }
+  .letter-container {
+    width: 100%;
+  }
+
+  .events {
+    display: block;
+  }
+  .events div {
+    width: 100%;
+  }
+  .events h3 {
+    font-size: 16px;
+  }
+}
+

@@ -31,7 +31,6 @@ html {
     padding: 10px;
     font-family: "Didot LP Display";
     color: #2d2c2d;
-    font-size: 2.5rem;
     letter-spacing: 2.5px;
   }
   
@@ -237,4 +236,37 @@ html {
   .footerArea {
     border-top: 0.5px solid #b3b3b3;
   }
+
+@media screen and (max-width: 768px) {
+
+  .banner {
+    height: 200px;
+  }
+  .banner h2 {
+    font-size: 50px;
+  }
   
+  
+  
+}
+
+@media screen and (max-width: 320px) {
+ 
+  .banner {
+    height: 150px;
+    width: auto;
+    padding-top: 50px;
+  }
+  .banner h2 {
+    font-size: 30px;
+  }
+  .image-grid {
+    display: block;
+    
+  }
+  .image-grid__item {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+}
