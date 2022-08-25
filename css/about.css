@@ -160,12 +160,15 @@ main {
   text-align: center;
 }
 
-#card h3 {
+#card h4 {
   font-size: 20px;
   color: #01452c;
   line-height: 1.2em;
   letter-spacing: normal;
   font-weight: 500;
+}
+#card a {
+  text-decoration: none;
 }
 
 
