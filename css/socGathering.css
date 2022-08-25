@@ -217,12 +217,3 @@ nav ul li:hover {
   border-radius: 50%;
   border: 2px solid #101010;
 }
-
-@media screen and (max-width: 768px) {
-  .navIndex {
-    position: absolute;
-    left: 40px;
-    top: 70px;
-    z-index: 1;
-  }
-}
