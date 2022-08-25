@@ -116,13 +116,21 @@ nav {
   text-transform: uppercase;
 }
 
-nav ul li .nav-items {
+nav ul li .nav-item {
   font-family: "Kontora", Sans-serif;
   color: black;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+}
+.nav-link, .dropdown-item {
+  font-family: "Kontora", sans-serif;
   display: flex;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 2.5px;
+
 }
 
 .navbar-nav {
