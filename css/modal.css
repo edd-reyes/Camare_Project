@@ -113,11 +113,11 @@ html {
   nav ul li:hover {
     border-bottom: 2px solid gray;
   }
-
+/* 
   main {
     max-width: 1500px;
     padding: 10px;
-  }
+  } */
 
     
 .image-grid {
@@ -268,6 +268,11 @@ html {
   
 }
 
+#modalContent {
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .slide {
     display: none;
     text-align: center;
@@ -321,8 +326,8 @@ img.hover-shadow {
 .close {
     color: white;
     position: absolute;
-    top: 10px;
-    right: 25px;
+    top: -68px;
+    right: -50px;
     font-size: 35px;
     font-weight: bold;
 }
@@ -338,7 +343,7 @@ img.hover-shadow {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -348,10 +353,11 @@ img.hover-shadow {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    text-decoration: none;
 }
 
 .next {
-    right: 2%;
+    right: 1%;
     border-radius: 3px 0 0 3px;
 }
 
@@ -360,24 +366,6 @@ img.hover-shadow {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media screen and (max-width: 1050px) {
-    .col {
-        width: 50%;
-    }
-    .modal {
-        padding: 30px 32px 0px 32px;
-    }
-    .modal-content {
-        margin-top: 100px;
-        max-width: 800px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .modal {
-        padding: 30px 10px 0px 10px;
-    }
-}
 
   
   .topBtn {
@@ -429,3 +417,95 @@ img.hover-shadow {
     border-top: 0.5px solid #b3b3b3;
   }
   
+
+  @media screen and (max-width: 768px) {
+    nav {
+      height: 40px;
+    }
+    .container {
+      gap: 2px;
+     
+    }
+    .banner {
+      height: 200px;
+    }
+    .banner h2 {
+      font-size: 50px;
+    }
+    .grid-item__image {
+      width: 300px;
+    }
+    .image-grid {
+      gap: 20px;
+      
+    }
+    .image-grid__item {
+      flex-basis: 300px;
+    }
+    .image-slide {
+      width: 700px;
+      height: auto;
+    }
+    .modal-content {
+      width: 700px;
+      position: fixed;
+    }
+
+    #modalContent {
+      top: 100px;
+      left: -40px;
+    }
+    .next {
+      right: -11%;
+     
+    }
+    .close {
+      top: 30px;
+      right: -58px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+  
+    .banner {
+      height: 150px;
+      width: auto;
+      padding-top: 50px;
+    }
+    .banner h2 {
+      font-size: 30px;
+    }
+    main {
+      padding: 0;
+    }
+    .image-grid {
+      display: block;
+      
+    }
+    .image-grid__item {
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .image-slide {
+      width: 300px;
+      height: auto;
+    }
+    .modal-content {
+      width: 300px;
+      position: fixed;
+    }
+
+    #modalContent {
+      top: 140px;
+      left: -60px;
+    }
+    .next {
+      right: -60%;
+     
+    }
+    .close {
+      top: 100px;
+      right: -58px;
+    }
+    
+  }
