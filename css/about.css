@@ -35,13 +35,21 @@ nav {
   text-transform: uppercase;
 }
 
-nav ul li .nav-items {
-  font-family: "Kontora", Sans-serif;
-  color: black;
+nav ul li .nav-item {
+  font-family: "Kontora", sans-serif;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+}
+
+.nav-link, .dropdown-item {
+  font-family: "Kontora", sans-serif;
   display: flex;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 2.5px;
+
 }
 
 .navbar-nav {
@@ -63,6 +71,8 @@ nav ul li .nav-items {
   margin: auto 0;
   width: 280px;
 }
+
+
 
 @media screen and (max-width: 992px) {
   .navbar-nav {
@@ -98,24 +108,18 @@ main {
   margin-top: 20px;
 }
 
-.about-images {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
- 
-  padding-bottom: 10px;
-}
 
 .about-images img {
   width: 300px;
   height: 400px;
+  margin: 10px;
 }
 
 .mission {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  gap: 50px;
+  gap: 10px;
   height: auto;
   width: 1226px;
 }
@@ -124,14 +128,9 @@ main {
   width: 200px;
 }
 
-.mission hr {
-  border: 1px solid black;
-  background-color: black;
-  margin: 0 0 0px 0;
-}
-
 .mission p {
   align-self: center;
+  width: 1000px;
 }
 
 .team {
@@ -152,7 +151,6 @@ main {
 .team-profile {
   display: flex;
   justify-content: center;
-  gap: 100px;
   align-items: center;
 }
 
@@ -234,7 +232,7 @@ main {
    margin-top: 0;
 }
 .events {
-  display: flex;
+  /* display: flex; */
   margin-left: auto;
   margin-right: auto;
   gap: 50px;
@@ -295,75 +293,10 @@ footer a:hover {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 977px) and (max-width: 1298px) {
   .about-images img {
-    width: 180px;
+    width: 220px;
     height: auto;
    
   }
-  .mission {
-    width: 100%;
-    gap: 15px;
-    padding: 15px;
-  }
-  .team-profile {
-    gap: 10px;
-  }
-  .team-message {
-    width: 100%;
-  }
-  .events {
-    gap: 10px;
-    padding: 15px;
-  }
-  .events div {
-    width: 250px;
-  }
-  .events div h3 {
-    font-size: 15px;
-  }
-  .events div img {
-    width: 200px;
-  }
 }
-
-@media screen and (max-width: 320px) {
-  .about-images {
-    display: block;
-    margin-left: 10px;
-  }
-  .about-images img {
-    text-align: center;
-    width: 300px;
-  }
-  .display-none {
-    display: none;
-  }
-  .mission {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .team-profile {
-    display: block;
-  }
-  .team-message {
-    width: 100%;
-  }
-  .letter-container {
-    width: 100%;
-  }
-
-  .events {
-    display: block;
-  }
-  .events div {
-    width: 100%;
-  }
-  .events h3 {
-    font-size: 16px;
-  }
-}
-

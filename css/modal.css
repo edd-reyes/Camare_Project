@@ -12,14 +12,16 @@ html {
 }
 
 .banner {
-    background-image: url(../images/banner.jpg);
-    height: 300px;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  background: url(../images/repeat-banner.png) fixed center no-repeat;
+  /* background-image: url(../images/repeat-banner.png); */
+  height: 300px;
+  /* background-attachment: fixed;  */
+  /* background-size: 100% 100%;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
 
 .banner h2 {
     font-family: "Didot LP Display";
@@ -55,13 +57,21 @@ html {
     text-transform: uppercase;
   }
   
-  nav ul li .nav-items {
+  nav ul li .nav-item {
     font-family: "Kontora", Sans-serif;
     color: black;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+  }
+  .nav-link, .dropdown-item {
+    font-family: "Kontora", sans-serif;
     display: flex;
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 2.5px;
+  
   }
   
   .navbar-nav {
@@ -419,13 +429,6 @@ img.hover-shadow {
   
 
   @media screen and (max-width: 768px) {
-    nav {
-      height: 40px;
-    }
-    .container {
-      gap: 2px;
-     
-    }
     .banner {
       height: 200px;
     }
@@ -470,7 +473,6 @@ img.hover-shadow {
     .banner {
       height: 150px;
       width: auto;
-      padding-top: 50px;
     }
     .banner h2 {
       font-size: 30px;
