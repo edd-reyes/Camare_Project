@@ -32,19 +32,62 @@ p {
 
 nav {
   height: 100px;
+  text-transform: uppercase;
 }
 
-nav ul li {
+nav ul li .nav-items {
   font-family: "Kontora", Sans-serif;
   color: black;
   display: flex;
-  align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
   font-size: 1rem;
   font-weight: 300;
-  text-transform: uppercase;
   letter-spacing: 2.5px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 50px;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-menu {
+  margin: auto 0;
+  width: 280px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 20px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+  }
 }
 
 nav ul li:hover {
