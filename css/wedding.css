@@ -27,6 +27,7 @@
 .introImg img {
     height: 80%;
     width: 80%;
+    object-fit: cover;
   }
 
 .wedHistory p {
@@ -73,6 +74,7 @@
 .wedServices img {
   height: 80%;
   width: 80%;
+  object-fit: cover;
 }
 
 .wedHistory img {
